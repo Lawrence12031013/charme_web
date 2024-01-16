@@ -2,12 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { LoginContext } from '../context/LoginContext'
 import axios from 'axios'
-import {useSession, useSupabaseClient, useSessionContext } from '@supabase/auth-helpers-react'
 
 const Complete = () => {
-    const session = useSession() // tokens
-    const supabase = useSupabaseClient() // talk to supabase
-    const { isLoading } = useSessionContext()
 
     const { user } = useContext(LoginContext)
     const navigate = useNavigate()
