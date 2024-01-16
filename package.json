@@ -2,7 +2,7 @@
   "name": "charme-wed",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://charme-web.vercel.app/",
+  "proxy": "https://charme-api.vercel.app/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
     "@supabase/auth-helpers-react": "^0.4.2",
