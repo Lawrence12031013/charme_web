@@ -1,3 +1,4 @@
+
 [[redirects]]
   from = "/auth/register"
   to = "https://charme-api.vercel.app/api/v1"
@@ -28,11 +29,11 @@
 
 [[headers]]
   # 將 Cache-Control 設定為最大 1 小時
-  "/*"
+  for="/*"
     Cache-Control = "max-age=3600"
 
   # 對於所有 API 請求，允許跨來源資源共用 (CORS)
-  "/api/*"
+  for="/api/*"
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, POST, PUT, DELETE"
 
