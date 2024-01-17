@@ -23,11 +23,7 @@ const Login = () => {
         e.preventDefault()
         dispatch({type:start_login})
         try {
-            const res = await axios.post('https://charme-api.vercel.app/auth/login', loginData,headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "GET, POST, OPTION",
-      })
+            const res = await axios.post('https://charme-api.vercel.app/auth/login', loginData)
             dispatch({type:login_success, payload:res.data.userDetails})
             navigate('/', {state:{islogin: true}})
         }catch(err){
