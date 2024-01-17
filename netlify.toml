@@ -1,5 +1,5 @@
 [build]
-command = "npm ci && hugo --minify --gc -b $URL"
+command = "npm run build"
 publish = "public"
 
 [[redirects]]
