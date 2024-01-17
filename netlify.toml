@@ -1,39 +1,36 @@
+[build]
+command = "npm ci && hugo --minify --gc -b $URL"
+publish = "public"
 
 [[redirects]]
   from = "/auth/register"
-  to = "https://charme-api.vercel.app/api/v1"
+  to = "https://charme-api.vercel.app/api/v1/*"
   status = 200
   force = true
   conditions = {Language = ["en"]}
 
 [[redirects]]
   from = "/auth/login"
-  to = "https://charme-api.vercel.app/api/v1"
+  to = "https://charme-api.vercel.app/api/v1/*"
   status = 200
   force = true
   conditions = {Language = ["en"]}
 
 [[redirects]]
   from = "/time"
-  to = "https://charme-api.vercel.app/api/v1"
+  to = "https://charme-api.vercel.app/api/v1/*"
   status = 200
   force = true
   conditions = {Language = ["en"]}
   
 [[redirects]]
   from = "/order"
-  to = "https://charme-api.vercel.app/api/v1"
+  to = "https://charme-api.vercel.app/api/v1/*"
   status = 200
   force = true
   conditions = {Language = ["en"]}
 
 [[headers]]
-  # 將 Cache-Control 設定為最大 1 小時
-  for="/*"
-    Cache-Control = "max-age=3600"
-
-  # 對於所有 API 請求，允許跨來源資源共用 (CORS)
-  for="/api/*"
+  for = "/*"
+  [headers.values]
     Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE"
-
