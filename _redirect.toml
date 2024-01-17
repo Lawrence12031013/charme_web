@@ -1,0 +1,28 @@
+[[redirects]]
+  from = "/auth/register"
+  to = "https://charme-api.vercel.app/api/v1"
+  status = 200
+  force = true
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/auth/login"
+  to = "https://charme-api.vercel.app/api/v1"
+  status = 200
+  force = true
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/time"
+  to = "https://charme-api.vercel.app/api/v1"
+  status = 200
+  force = true
+  conditions = {Language = ["en"]}
+  
+[[redirects]]
+  from = "/order"
+  to = "https://charme-api.vercel.app/api/v1"
+  status = 200
+  force = true
+  conditions = {Language = ["en"]}
+
