@@ -1,7 +1,3 @@
-[build]
-command = "npm run build"
-publish = "public"
-
 [[redirects]]
   from = "/auth/register"
   to = "https://charme-api.vercel.app/api/v1/*"
