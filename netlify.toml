@@ -29,11 +29,3 @@ publish = "public"
   status = 200
   force = true
   conditions = {Language = ["en"]}
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "deny"
-    X-XSS-Protection = "1; mode=block"
