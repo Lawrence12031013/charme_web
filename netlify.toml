@@ -26,3 +26,13 @@
   force = true
   conditions = {Language = ["en"]}
 
+[headers]
+  # 將 Cache-Control 設定為最大 1 小時
+  "/*"
+    Cache-Control = "max-age=3600"
+
+  # 對於所有 API 請求，允許跨來源資源共用 (CORS)
+  "/api/*"
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE"
+
