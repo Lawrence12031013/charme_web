@@ -5,8 +5,6 @@ import { LoginContext } from '../context/LoginContext'
 import { login_failure, login_success, start_login } from '../constants/actionTypes'
 import axios from 'axios'
 
-
-
 const Login = () => {
     const registerSuccess = useLocation()
     const navigate = useNavigate()
